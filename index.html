@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Garage Bootstrap Template</title>
+	<meta name="description" content="">
+<!--
+Template 2079 Garage
+http://www.tooplate.com/view/2079-garage
+-->
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTopBtn" title="Back to Top">O</a>
+
+
+<script>
+    window.onscroll = function () {
+        var backToTopBtn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    };
+    document.getElementById("backToTopBtn").addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    
+</script>
+
+
+	<meta name="author" content="Web Domus Italia">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style/slider.css">
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+    <link rel="icon" href="favicon.ico" type="image/favicon">
+    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/favicon-16x16">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/favicon-32x32">
+    <link rel="icon" href="favicon-192x192.png" sizes="192x192" type="image/favicon-192x192"> 
+    
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <div class="container">
+        <div class="header-top">
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <span>Give us a call: <a href="tel:+66666666">+263772572632</a></span>
+            </div>
+
+            <!-- Login/Register Links with Ripple Effect -->
+            <div class="auth-links">
+                <a href="#" class="ripple-btn login-btn">Log in</a>
+                <a href="#" class="ripple-btn register-btn">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<!-- Navbar Up -->
+	<nav class="topnavbar navbar-default topnav">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Responsive Menu Toggle Button -->
+				<button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+	
+			<!-- Navbar Links -->
+			<div class="collapse navbar-collapse" id="upmenu">
+				<ul class="nav navbar-nav" id="navbarontop">
+					<!-- Home Link -->
+					<li class="active"><a href="#">HOME</a></li>
+					
+					<!-- Services Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+						<ul class="dropdown-menu dropdowncostume">
+							<li><a href="#">Repairs</a></li>
+							<li><a href="#">Tuning</a></li>
+							<li><a href="#">Body Work</a></li>
+						</ul>
+					</li>
+					
+					<!-- Partners Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PARTNERS <span class="caret"></span></a>
+						<ul class="dropdown-menu dropdowncostume">
+							<li><a href="#">Dealer 1</a></li>
+							<li><a href="#">Dealer 2</a></li>
+							<li><a href="#">Dealer 3</a></li>
+						</ul>
+					</li>
+					
+					<!-- Contact Link -->
+					<li><a href="contact.html">CONTACT</a></li>
+	
+					<!-- Book Appointment Button -->
+					<li><button class="postnewcar-btn"><span class="postnewcar">BOOK AN APPOINTMENT</span></button></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	
+<!--_______________________________________ Carousel__________________________________ -->
+<div class="hero-section">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>CALL-OUT FEE WAIVED ON ALL VEHICLE SERVICING AND MAJOR REPAIRS</h1>
+            <ul class="service-list">
+                <li><span class="check-icon">✔</span> We Provide Emergency & Roadside Assistance.</li>
+                <li><span class="check-icon">✔</span> We Provide Vehicle Services, Tune-ups & Logbook Servicing.</li>
+                <li><span class="check-icon">✔</span> We Provide New Car Batteries and Replacements.</li>
+                <li><span class="check-icon">✔</span> Alternators, Starter Motor & Radiator Services.</li>
+                <li><span class="check-icon">✔</span> Servicing & Repairs to Braking & Cooling Systems.</li>
+            </ul>
+            <div class="cta-button">
+                <a href="tel:1300513462" class="call-btn">CALL 1300 513 462</a>
+       
+            </div>
+            <div class="additional-info">
+                <div class="same-day-service">
+                    <span>🚚</span> Same day service*
+                </div>
+                <div class="quote">
+                    <span>🕒</span> Free quote within 15 min*
+                </div>
+                <div class="discount">
+                    <span>💸</span> $50 Discount for the first 5 customers*
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="image/wallapaper.jpg" alt="Mechanic Working on a Car">
+        </div>
+    </div>
+</div>
+
+<!-- ________________________service car section _______________________-->
+<div class="brands-section">
+    <h2>We Service All Brands</h2>
+    <div class="brands-grid">
+        <div class="brand-item" data-brand="Mitsubishi">
+            <img src="image/mist.png" alt="Mitsubishi">
+            <span class="brand-name">Mitsubishi</span>
+        </div>
+        <div class="brand-item" data-brand="Volvo">
+            <img src="image/volvo.png" alt="Volvo">
+            <span class="brand-name">Volvo</span>
+        </div>
+        <div class="brand-item" data-brand="Renault">
+            <img src="image/renault.png" alt="Renault">
+            <span class="brand-name">Renault</span>
+        </div>
+        <div class="brand-item" data-brand="Volkswagen">
+            <img src="image/volvo.png" alt="Volkswagen">
+            <span class="brand-name">Volkswagen</span>
+        </div>
+        <div class="brand-item" data-brand="Toyota">
+            <img src="image/toyota.png" alt="Toyota">
+            <span class="brand-name">Toyota</span>
+        </div>
+
+        <div class="brand-item" data-brand="Nissan">
+            <img src="image/nisan.png" alt="Nissan">
+            <span class="brand-name">Nissan</span>
+        </div>
+
+		<div class="brand-item" data-brand="Lexus">
+            <img src="image/lexus.png" alt="Lexus">
+            <span class="brand-name">Lexus</span>
+        </div>
+        <div class="brand-item" data-brand="Jeep">
+            <img src="image/jeep.png" alt="Jeep">
+            <span class="brand-name">Jeep</span>
+        </div>
+        <div class="brand-item" data-brand="Chevrolette">
+            <img src="image/fhev.png" alt="Chevrolette">
+            <span class="brand-name">Chevrolette</span>
+        </div>
+        <div class="brand-item" data-brand="Mercedes">
+            <img src="image/amg.png" alt="Mercedes">
+            <span class="brand-name">Mercedes</span>
+        </div>
+        <div class="brand-item" data-brand="audi">
+            <img src="image/audi.png" alt="audi">
+            <span class="brand-name">audi</span>
+        </div>
+		
+        <div class="brand-item" data-brand="Alfa Romeo">
+            <img src="image/alfa.png" alt="Alfa Romeo">
+            <span class="brand-name">Alfa Romeo</span>
+        </div>
+        <!-- Add more logos as needed -->
+    </div>
+</div>
+<!-- ____________________upload image  Section ______________________________--> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Repair Image Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="upload-section">
+    <h2>Upload Your Car's Image for a Quick Diagnosis</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="carImage" class="custom-file-upload">
+            <input type="file" name="carImage" id="carImage" accept="image/*">
+            <span>Choose an image</span>
+        </label>
+        <button type="submit" class="submit-btn">Upload Image</button>
+    </form>
+
+    <!-- Preview of the uploaded image -->
+    <div id="imagePreview"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+
+
+
+
+<!-- ____________________quote Section ______________________________--> 
+<div class="quote-section">
+    <h2>Get a Quick Quote Within 5 Minutes</h2>
+    <form id="quote-form" class="quote-form">
+        <div class="form-group">
+            <input type="text" id="name" required>
+            <label for="name">Name*</label>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" required>
+            <label for="email">Email*</label>
+        </div>
+        <div class="form-group">
+            <input type="tel" id="phone">
+            <label for="phone">Phone</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="make-model">
+            <label for="make-model">Make And Model</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="rego">
+            <label for="rego">Rego</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="location">
+            <label for="location">Location</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="inquiry">
+            <label for="inquiry">Repair Inquiry</label>
+        </div>
+        <button type="submit" class="submit-btn">Submit Now</button>
+    </form>
+</div>
+
+
+<!-- ________________________service car section _______________________-->
+<div class="services-section">
+    <h2>What Would You Like Help With?</h2>
+    <div class="services-grid">
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/starter.png" alt="Starter Motor">
+            </div>
+            <p>Starter Motor Replacements</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/car-radiator.png" alt="Radiator Replacement">
+            </div>
+            <p>Radiator Replacement & Repairs</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/gas-pump.png" alt="Fuel Pump Repair">
+            </div>
+            <p>Fuel Pump Repair</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/alternator.png" alt="Alternator Replacement">
+            </div>
+            <p>Alternator Replacement</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/transport.png" alt="Car Diagnostic Scan">
+            </div>
+            <p>Car Diagnostic Scan</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/checklist.png" alt="Pre Purchase Inspection">
+            </div>
+            <p>Pre Purchase Car Inspection</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/brakes.png" alt="Brakes Repair">
+            </div>
+            <p>Brakes Repair</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/car-radiator.png" alt="Coolant Repair">
+            </div>
+            <p>Coolant Repair</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/diagnosis.png" alt="Log Book Services">
+            </div>
+            <p>Log Book Services</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/battery.png" alt="Batteries Repair">
+            </div>
+            <p>Batteries Repair</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/drive-belt.png" alt="Drive Belts Replacements">
+            </div>
+            <p>Drive Belts Replacements</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="image/call-out.png" alt="Call Outs Diagnostics">
+            </div>
+            <p>Call Outs Diagnostics</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- _______________________________latest news ____________________-->
+<div class="latest-news-section">
+    <h2>Latest News</h2>
+    <div class="news-grid">
+        <div class="news-item">
+            <img src="image/black-and-white-car-wheel-vehicle-garage-black-699922-pxhere.com.jpg" alt="Tyre Standards">
+            <div class="news-info">
+                <h3>Tyre Standards of Australia</h3>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="image/car-wheel-vehicle-grille-bumper-rim-801576-pxhere.com.jpg" alt="Radiator Leak">
+            <div class="news-info">
+                <h3>Radiator Leak Problems</h3>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="image/technology-sport-car-automobile-interior-motion-622331-pxhere.com.jpg" alt="Daily Blog">
+            <div class="news-info">
+                <h3>Daily Blog for Car Enthusiasts</h3>
+            </div>
+        </div>
+        <!-- Add more news items as needed -->
+    </div>
+</div>
+
+	<!-- ______________________________________________________Bottom Menu ______________________________-->
+	<footer class="footer-section">
+        <div class="footer-container">
+            <!-- Contact Information Section -->
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p><strong>Melbourne Mobile Mechanic</strong></p>
+                <p>1300 513 462</p>
+                <p>Mon - Fri: 8am to 6pm</p>
+                <p>Saturday: 9am to 3pm</p>
+                <p>Sunday: Closed</p>
+                <p>128 berkley street</p>
+            </div>
+
+            <!-- Newsletter Sign-up Section -->
+            <div class="newsletter-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to receive our latest offers and news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Customer Reviews Section -->
+            <div class="reviews-section">
+                <h3>Customer Reviews</h3>
+                <div class="reviews">
+                    <p>"Great service, fast and reliable!"</p>
+                    <p>- John D.</p>
+                </div>
+                <div class="reviews">
+                    <p>"Friendly and professional staff."</p>
+                    <p>- Sarah K.</p>
+                </div>
+                <div class="reviews">
+                    <p>"Highly recommend their services!"</p>
+                    <p>- Mike T.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Your Mobile Mechanic. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>

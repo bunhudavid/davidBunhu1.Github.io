@@ -1,0 +1,927 @@
+
+/* Back to Top Button Styling */
+
+/* Back to Top Button Styling */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ff0000; 
+    color: #ffffff; 
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px; 
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.2); 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; 
+}
+
+.back-to-top:hover {
+    background-color: #d10000; 
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* Show the button when the user scrolls down */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+::-webkit-scrollbar {
+    width: 2px; /* Smaller scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+	min-height: 10px;
+    box-shadow: 0 0 6px #ff0000; /* Red glow effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d10000;
+    box-shadow: 0 0 10px #ff0000; /* Stronger glow on hover */
+}
+
+/* Firefox Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff0000 #f0f0f0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #000000; /* Black background */
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-icons a {
+    color: #ffffff; /* White icons */
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+.contact-info span {
+    color: #ffffff; /* White text */
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-links a {
+    color: #ffffff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #ff0000; /* Red background for buttons */
+}
+
+.login-btn {
+    background-color: #ffffff; /* White background for Login */
+    color: #000000; /* Black text for Login */
+}
+
+.register-btn {
+    background-color: #ff0000; /* Red background for Register */
+    color: #ffffff; /* White text for Register */
+}
+
+.auth-links a:hover {
+    color: #000000; /* Black text on hover */
+}
+
+.auth-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black ripple effect */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-out;
+}
+
+.auth-links a:active::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.auth-links a.login-btn::before {
+    background-color: rgba(255, 0, 0, 0.3); /* Red ripple effect for Login */
+}
+
+.auth-links a.register-btn::before {
+    background-color: rgba(255, 255, 255, 0.3); /* White ripple effect for Register */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+    }
+
+    .auth-links {
+        margin-top: 10px;
+    }
+}
+/*----------------------End Header --------------------*/
+ 
+/* General Styling for Navbar */
+.navbar-default {
+    background-color: #ffffff; /* Black background to match the theme */
+    border: none;
+}
+
+.navbar-header .navbar-toggle {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-header .icon-bar {
+    background-color: #ffffff; /* White icon bars for toggling menu */
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav > li > a {
+    color: #ffffff; /* White links */
+    font-size: 16px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li > a:hover {
+    background-color: #ff0000; /* Red hover effect */
+    color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #333333; /* Dark gray dropdown background */
+    border: none;
+}
+
+.navbar-nav .dropdown-menu > li > a {
+    color: #ffffff; /* White dropdown links */
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-menu > li > a:hover {
+    background-color: #ff0000; /* Red on hover in dropdown */
+    color: #ffffff;
+}
+
+/* Button Styling */
+.postnewcar-btn {
+    background-color: #ff0000; /* Red button background */
+    border: none;
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+}
+
+.postnewcar-btn:hover {
+    background-color: #ffffff; /* White button on hover */
+    color: #ff0000; /* Red text on hover */
+    border: 2px solid #ff0000;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+/* ------------------------ End Navbar On Top -----------------*/
+
+/*------------------------- Start Carousel --------------------*/
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.service-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.check-icon {
+    color: #ff0000; /* Red checkmark */
+    margin-right: 10px;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.call-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.call-btn:hover {
+    background-color: #cc0000; /* Darker red on hover */
+	color: #ffffff;
+}
+
+/* Additional Info (Same-day service, Free quote, Discount) */
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px; /* Increased max-width for more space between items */
+    margin-top: 20px; /* Add space between the call-to-action button and additional info */
+}
+
+.additional-info div {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Add padding around each item for spacing */
+    text-align: center;
+}
+
+.additional-info span {
+    font-size: 24px; /* Make icons slightly bigger */
+    margin-right: 10px; /* Spacing between the icon and text */
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+ 
+/*   ---------------------------   fetured cars   ---------------------------------    */
+.quote-section {
+    background-color: #f0f0f0;
+    padding: 80px 20px;
+    text-align: center;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #ff0000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.quote-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 18px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333333;
+    outline: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:hover {
+    background-color: #f7f7f7;
+    border-color: #ff0000;
+}
+
+.form-group input:focus {
+    background-color: #f7f7f7;
+    border-color: #ff0000;
+}
+
+.form-group label {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 25px;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.submit-btn {
+    grid-column: span 2;
+    background: linear-gradient(90deg, #ff0000, #d3d3d3);
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 30px;
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #d3d3d3, #ff0000);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.form-group input::placeholder {
+    color: #bbbbbb;
+}
+
+.quote-section {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*  ------------------------------------  *brands  *   -----------------------------------   */
+/* General Styling for the Brands Section */
+.brands-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff; /* White background */
+}
+
+.brands-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000000; /* Black text for visibility */
+}
+
+/* Grid Layout for the Brand Logos */
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six columns */
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Each Brand Item Styling */
+.brand-item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background for logos */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light black shadow */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid #ff0000; /* Red border around each item */
+}
+
+.brand-item:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    border-color: #ff0000; /* Keep the red border on hover */
+}
+
+/* Hide brand name initially */
+.brand-name {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000; /* Red background for brand name */
+    color: #ffffff; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Show the brand name on hover */
+.brand-item:hover .brand-name {
+    visibility: visible;
+    opacity: 1;
+    bottom: -10px; /* Move up closer to the item */
+}
+
+/* Image Styling */
+.brand-item img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/*  -----------------     End Latest Cars Images    ------------------------ */
+
+/* Styling for the upload section */
+.upload-section {
+    background-color: #f0f0f0;
+    padding: 50px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section h2 {
+    color: #ff0000;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Custom file upload button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: #d10000;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d10000;
+}
+
+/* Image preview styling */
+#imagePreview {
+    margin-top: 20px;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* General Section Styling */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Service Item Styling */
+.service-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000; /* Red background for the icons */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .service-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .service-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* ------------------ latyets Section -----------------------------------*/
+
+/* General Styling for the Latest News Section */
+.latest-news-section {
+    padding: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.latest-news-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+/* Grid Layout for News Items */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-item {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    perspective: 1000px; /* Create a 3D perspective for the tilt effect */
+}
+
+/* Tilt effect on hover */
+.news-item:hover {
+    transform: rotateY(10deg); /* Slight tilt on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevate the shadow on hover */
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.news-info h3 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+
+    .news-item img {
+        height: 150px;
+    }
+}
+
+/*-------------------------------------End Newsletter Section ----------------*/	
+/*-------------------------------------Bottom Menu -----------------------------------------------*/
+ /* General Footer Styling */
+.footer-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+.footer-container div {
+    flex: 1;
+}
+
+/* Contact Section Styling */
+.contact-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff; /* White for contact heading */
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.newsletter-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.newsletter-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #ccc; /* Light gray for description */
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 70%;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: #ff0000; /* Red button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Reviews Section */
+.reviews-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.reviews {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #ff0000; /* Red for the quotes */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111; /* Darker bottom */
+    color: #fff;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
